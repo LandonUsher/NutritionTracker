@@ -1,3 +1,5 @@
-Create Repository
-Create ReadMe
-Create Projectroadmap
+- [x] Create Repository
+- [x] Create ReadMe
+- [x] Create Projectroadmap
+- [x] Research one existing pyhton code
+- [x] turn into D2L
