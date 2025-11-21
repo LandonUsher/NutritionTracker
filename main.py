@@ -17,41 +17,41 @@ class NutritionTracker:
             print("No nutrition to display.")
             return
 
-        for i, eat in enumerate(self.nutrition, 1):
-            print(f"{i}. {workout['name']} on {workout['date']} for {workout['duration']} minutes, burning {workout['calories']} calories.")
+        for i, nutrition in enumerate(self.nutrition, 1):
+            print(f"{i}. {nutrition['name']} on {nutrition['time']} with {nutrition['protein']} grams of protein, and {nutrition['calories']} calories.")
 
-    def delete_workout(self, index):
+    def delete_nutrition(self, index):
         try:
-            removed_workout = self.workouts.pop(index - 1)
-            print(f"Deleted workout: {removed_workout['name']} on {removed_workout['date']}.")
+            removed_nutrition = self.nutrition.pop(index - 1)
+            print(f"Removed nutrients: {removed_nutrition['name']} on {removed_nutrition['time']}.")
         except IndexError:
-            print("Invalid workout number.")
+            print("Invalid nutrition number.")
 
 def main():
-    manager = WorkoutManager()
+    manager = NutritionManager()
 
     while True:
-        print("\nWorkout Manager")
-        print("1. Add workout")
-        print("2. View workouts")
-        print("3. Delete workout")
+        print("\nNutrition Manager")
+        print("1. Add Nutrition")
+        print("2. View Nutrition")
+        print("3. Delete Nutrition")
         print("4. Exit")
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            name = input("Enter workout name: ")
-            date = input("Enter workout date (YYYY-MM-DD): ")
-            duration = input("Enter workout duration (in minutes): ")
-            calories = input("Enter calories burned: ")
-            manager.add_workout(name, date, duration, calories)
+            name = input("Enter Nutrition name: ")
+            time = input("Enter intake time (xx:xx): ")
+            Protein = input("Enter the amount of protein: ")
+            calories = input("Enter the amount calories: ")
+            manager.add_workout(name, date, protein, calories)
         elif choice == '2':
-            manager.view_workouts()
+            manager.view_nutrition()
         elif choice == '3':
-            manager.view_workouts()
-            index = int(input("Enter the workout number to delete: "))
+            manager.view_nutrition()
+            index = int(input("Enter the nutrition number to delete: "))
             manager.delete_workout(index)
         elif choice == '4':
-            print("Exiting the Workout Manager.")
+            print("Exiting the Nutrion Tracker.")
             break
         else:
             print("Invalid choice. Please try again.")
