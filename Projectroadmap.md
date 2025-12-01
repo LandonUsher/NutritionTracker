@@ -1,15 +1,15 @@
-SPRINT 1
+- SPRINT 1
 - [x] Create Repository
 - [x] Create ReadMe
 - [x] Create Projectroadmap
 - [x] Research one existing pyhton code
 - [x] turn into D2L
-SPRINT 2
+- SPRINT 2
 - [x] Make updates to Main and add comments to commit
 - [x] Track updates
 - [x] Update project road map
 - [x] Turn in d2l update quiz
-SPRINT 3
+- SPRINT 3
 - [x] Create PowerPoint slide
 - [x] Add to repository
 - [x] Turn into D2L
