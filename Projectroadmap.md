@@ -9,3 +9,7 @@ SPRINT 2
 - [x] Track updates
 - [x] Update project road map
 - [x] Turn in d2l update quiz
+SPRINT 3
+- [x] Create PowerPoint slide
+- [x] Add to repository
+- [x] Turn into D2L
